@@ -266,10 +266,11 @@
         </p>
         <p>
           <ul>
-            <li><b>Languages:</b> Python (Pandas, Numpy, Scikit-learn), C++, SQL</li>
-            <li><b>Tech Stack:</b> PyTorch, TensorFlow, MLflow, Apache Toolkit (Airflow, Spark), Docker, Kubernetes, Git, Tableau, Linux</li>
-            <li><b>Cloud Platforms:</b> AWS - EC2, S3, Lambda, Bedrock, Redshift, ECS; Azure - VMs, Functions, Cognitive Services</li>
-            <li><b>Machine Learning:</b> Classification, Regression, Clustering, Hypothesis Testing, LLMs, CNN, LSTM, Attention, PCA</li>
+            <li><b>Programming:</b> Python, C++, SQL</li>
+            <li><b>Libraries/ML:</b> PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy</li>
+            <li><b>MLOps & Data:</b> MLflow, Airflow, Spark, Docker, Kubernetes, Git, Tableau, Linux</li>
+            <li><b>Cloud:</b> AWS - EC2, S3, Lambda, Bedrock, Redshift, ECS; Azure - VMs, Functions, Cognitive Services</li>
+            <li><b>Machine Learning:</b> Supervised ML, Clustering, PCA, CNNs, LSTMs, Attention, LLMs, Hypothesis Testing</li>
           </ul>
           
         </p>
@@ -317,15 +318,15 @@
             <div class="role brown-text text-darken-2">Data Scientist</div>
             <ul>
               <li>
-                Reconstructed missing respiratory signals in polysomnography studies at 84% recall and 75% precision by building a Dilated Residual CNN with Attention, leveraging plethysmography data for sleep apnea patients.
+                Generated airflow signal for home sleep-apnea studies lacking nasal cannulas by training a Dilated Residual CNN + Attention on plethysmography, reaching 84% recall and 75% precision.
               </li>
               <li>
-                Restored MLflow platform within 24 hours with 100% data integrity by creating custom backup/restore pods and automating nightly MinIO backups via Kubernetes CronJobs after a service failure.
+                Restored a failed MLflow service within 24h and 100% data integrity via custom backup/restore pods and automated MinIO data snapshots using Kubernetes CronJobs.
               </li>
               <li>Improved team model tracking, logging, experimentation, and versioning by 30% by deploying MLflow on Ubuntu Server, accelerating workflow efficiency and reproducibility.</li>
-              <li>Reduced clinical data extraction costs 40% by optimizing token sizes. Employed Retrieval Augmented Generation(RAG) and Cosine Similarity based nearest neighbor grouping to minimize redundant text chunks.</li>
+              <li>Flagged and removed sensitive entities on clinical notes with a lightweight zero-shot GLiNER NER, blocking 98% of protected health information (PHI) leaks before LLM inference via AWS Bedrock.</li>
               <li>
-                Prevented 98% of patient data leaks via a zero-shot GLiNER Named Entity Recognition(NER) model, censoring personal details before forwarding clinical notes to LLMs on AWS Bedrock.
+                Reduced token usage by 40% by clustering redundant clinical note chunks in RAG using cosine similarity.
               </li>
             </ul>
           </div>
@@ -353,13 +354,13 @@
             <div class="role brown-text text-darken-2">Data Science Intern</div>
             <ul>
               <li>
-                Boosted contract engagement 40% with a two-tower deep learning recommender system, incorporating BERT text embeddings and company metadata for relevance scoring.
+                Lifted contract engagement 20% using a two-tower recommender system combining BERT text embeddings and company/contract metadata.
               </li>
               <li>
-                Reduced processing time 90% while extracting structured data from PDFs, DOCXs, and PPTs. Built an AWS Lambda API leveraging GPT-3.5.
+                Slashed document-parsing time 90% by deploying a GPT-3.5 Lambda API for PDF/DOCX/PPT extraction.
               </li>
               <li>
-                Saved 8 weekly hours by automating data pipelines with Apache Airflow and Python, storing processed documents on AWS Redshift and S3.
+                Saved 8 h/week with Apache Airflow pipelines feeding AWS Redshift and S3.
               </li>
             </ul>
           </div>
@@ -418,6 +419,21 @@
             <h4 class="brown-text light">Publications on Towards Data Science</h4>
             
             <div class="row text-center">
+
+              <div class="col s12 m6 l4">
+                <div class="card small">
+                  <div class="card-image">
+                    <img src="/assets/img/article-kl.png" alt="KL Divergence Article" class="responsive-img">
+                  </div>
+                  <div class="card-content">
+                    <p>
+                      <a href="https://medium.com/@nagharjun2000/minimizing-kl-divergence-equals-minimizing-cross-entropy-c645ba1b8511" target="_blank">
+                        Minimizing KL Divergence Equals Minimizing Cross-Entropy
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
     
               <!-- Your TDS article -->
               <div class="col s12 m6 l4">
